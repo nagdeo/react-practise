@@ -1,0 +1,46 @@
+<!-- by usin react library -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    
+</head>
+<body>
+    <h1>React Demo</h1>
+    <div id="app"></div>
+    <div id="app2"></div>
+    <script>
+        header=React.createElement('h2',{},'Hello from React')
+     ReactDOM.render(header,document.getElementById('app'))
+
+     var title="hello from reactjs"
+     header2=React.createElement('h2',{style:{color:'white',backgroundColor:'green'}},title);
+     var title="after hello from reactjs" // by default react is not reactive means 
+                                          // this tile once binded above not change
+                                          //eg.: a=100
+                                          //     b=10
+                                          //    print c=a+b =>110
+                                          //if now b=100
+                                           // then c will not 200 
+     ReactDOM.render(header2,document.getElementById('app'))
+
+     //creating an element using component
+     class MyHeader extends React.Component{
+         render(){
+             return React.createElement('h1',null,'Hello from App2')
+         }
+     }
+     ReactDOM.render(
+         React.createElement(MyHeader,{},null),
+         document.getElementById('app2')
+     )
+    </script>
+     
+</body> 
+</html>

@@ -1,0 +1,14 @@
+.btnOffers {
+    padding: 9px 20px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    float: right;
+}
+.card-div{
+    width: 16rem;
+    border: 1px solid green;
+    height: 28rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
