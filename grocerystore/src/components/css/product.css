@@ -1,0 +1,10 @@
+.btnProducts {
+    padding: 12px 39px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    margin-right: 1rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+}
